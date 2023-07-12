@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks clone</title>
+<link rel="stylesheet" href="website.css" >
+
+</head>
+<body>
+<section>
+
+<div class="circle" ></div>  
+<header>
+
+<a href="#" ><img src="website images/logo.png" class="logo"  ></a>
+<ul>
+<li><a href="#" >Home</a></li>
+<li><a href="#" >Menu</a></li>
+<li><a href="#" >What's New </a></li>
+<li><a href="#" >Contact</a></li>
+
+</ul>
+
+</header>
+<div class="content" >
+<div class="textbox" >
+
+<h2>It's not just coffee<br>It's <span>Starbucks</span> </h2>
+<p>We are passionate purveyors of coffee and everything else,also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds. And the music you hear in store is chosen for its artistry and appeal.</p>
+
+<button style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"  onclick="window.location.href='https://www.starbucks.com/'"  ><a>Explore More</a></button>
+</div>
+
+<div class="imagebox" >
+<img src="website images/img1.png" class="starbucks">
+</div>
+
+</div>
+
+<ul class="thumb" >
+
+<li><img src="website images/thumb1.png" onclick="imgslider('website images/img1.png');changeCircleColor('#017143')"   ></li>  
+<li><img src="website images/thumb2.png" onclick="imgslider('website images/img2.png');changeCircleColor('#eb7495') "  ></li>  
+<li><img src="website images/thumb3.png" onclick="imgslider('website images/img3.png');changeCircleColor('#d752b1') "  ></li>  
+</ul>
+
+<ul class="social" >
+
+<li><a href="#" ><img src="website images/facebook.png"></a></li>
+<li><a href="#" ><img src="website images/instagram.png"></a></li>
+<li><a href="#" ><img src="website images/twitter.png"></a></li>
+
+</ul>
+
+</section>  
+
+<script>
+
+function imgslider(anything) {
+  document.querySelector('.starbucks').src = anything;
+
+}
+function changeCircleColor(color){
+const circle = document.querySelector('.circle');
+circle.style.background = color;
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
